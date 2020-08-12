@@ -2,6 +2,8 @@
 
 Autotyler is a program that turns small "incomplete" tilemaps into complete godot 3x3 minimal autotile tilemaps, including support for configuring edge sizes.
 
+Licensed under the Apache license, version 2.0.
+
 In: ![in_basic](examples/basic.png)
 
 Out: ![out_basic](examples/basic_output.png)
