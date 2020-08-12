@@ -73,4 +73,5 @@ tile list:
     autotyler basic.png out.png size=32 offset=4,1 0,0 0,2
 This gets the first tile from 4,1 and the second tile from 4,3.
 
-The tile list is optional.```
+The tile list is optional.
+```
