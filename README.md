@@ -8,7 +8,7 @@ In: ![in_basic](examples/basic.png)
 
 Out: ![out_basic](examples/basic_output.png)
 
-There are five algorithms with varying levels of sophistication, like below:
+There are five other algorithms with varying levels of sophistication, like below:
 
 ### basic_border
 
