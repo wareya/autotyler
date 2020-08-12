@@ -46,7 +46,7 @@ The minitiles algorithm has the same input as https://github.com/lunarfyre7/Godo
 
 ## Usage
 ```
-tilegen <infile> <outfile> <options> [tile list]
+autotyler <infile> <outfile> <options> [tile list]
 
 options:
   mode=basic | basic_border | 3x3 | 4x4 | minitiles
