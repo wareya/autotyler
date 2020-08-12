@@ -70,7 +70,7 @@ Do not place spaces around the = when specifying options.
 tile list:
   The basic, basic_border, and minitiles modes allow you to list arbitrary tile coordinates to grab tiles from. Support for this will be added to the 3x3 and 4x4 modes later on.
   Example:
-    tilegen basic.png out.png size=32 offset=4,1 0,0 0,2
+    autotyler basic.png out.png size=32 offset=4,1 0,0 0,2
 This gets the first tile from 4,1 and the second tile from 4,3.
 
 The tile list is optional.```
