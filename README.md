@@ -45,7 +45,8 @@ or with edges=8,6,8,10:
 The minitiles algorithm has the same input as https://github.com/lunarfyre7/GodotAutotileAssembler
 
 ## Usage
-```tilegen <infile> <outfile> <options> [tile list]
+```
+tilegen <infile> <outfile> <options> [tile list]
 
 options:
   mode=basic | basic_border | 3x3 | 4x4 | minitiles
