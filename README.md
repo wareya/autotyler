@@ -75,3 +75,33 @@ This gets the first tile from 4,1 and the second tile from 4,3.
 
 The tile list is optional.
 ```
+
+## Output
+
+The output is a tilemap set up for godot 3x3 minimal autotiling with this bitmask:
+
+![bitmask](readme/out%20bitmask.png)
+
+## Modes
+
+The five algorithms take these kinds of inputs, in terms of autotile bitmasks:
+
+### basic
+
+![bitmask](readme/2x1%20bitmask.png)
+
+### basic_border
+
+![bitmask](readme/2x1%20bitmask.png)
+
+### 3x3
+
+![bitmask](readme/3x3%20bitmask.png)
+
+### 4x4
+
+![bitmask](readme/4x4%20bitmask.png)
+
+### minitiles
+
+![bitmask](readme/5x1%20bitmask.png)
