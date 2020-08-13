@@ -279,6 +279,61 @@ The tile list is optional.
     let m_top = size-bottom_edge;
     let m_bottom = size-top_edge;
     
+    let copy_corners = |corner|
+    {
+        copy_tile(corner, (2, 1));
+        
+        copy_tile_part(corner, (1, 0), (m_left, m_top, 0, 0));
+        copy_tile_part(corner, (1, 1), (m_left, 0, 0, 0));
+        copy_tile_part(corner, (1, 2), (m_left, 0, 0, m_bottom));
+        
+        copy_tile_part(corner, (2, 0), (0, m_top, 0, 0));
+        copy_tile_part(corner, (2, 2), (0, 0, 0, m_bottom));
+        
+        copy_tile_part(corner, (3, 0), (0, m_top, m_right, 0));
+        copy_tile_part(corner, (3, 1), (0, 0, m_right, 0));
+        copy_tile_part(corner, (3, 2), (0, 0, m_right, m_bottom));
+        
+        
+        copy_tile_part(corner, (4, 0), (0, m_top, m_right, 0));
+        copy_tile_part(corner, (5, 0), (0, m_top, m_right, 0));
+        copy_tile_part(corner, (5, 2), (0, m_top, m_right, 0));
+        copy_tile_part(corner, (7, 2), (0, m_top, m_right, 0));
+        
+        copy_tile_part(corner, (7, 0), (m_left, m_top, 0, 0));
+        copy_tile_part(corner, (6, 0), (m_left, m_top, 0, 0));
+        copy_tile_part(corner, (6, 2), (m_left, m_top, 0, 0));
+        copy_tile_part(corner, (4, 2), (m_left, m_top, 0, 0));
+        
+        copy_tile_part(corner, (4, 3), (0, 0, m_right, m_bottom));
+        copy_tile_part(corner, (5, 3), (0, 0, m_right, m_bottom));
+        copy_tile_part(corner, (5, 1), (0, 0, m_right, m_bottom));
+        copy_tile_part(corner, (7, 1), (0, 0, m_right, m_bottom));
+        
+        copy_tile_part(corner, (7, 3), (m_left, 0, 0, m_bottom));
+        copy_tile_part(corner, (6, 3), (m_left, 0, 0, m_bottom));
+        copy_tile_part(corner, (6, 1), (m_left, 0, 0, m_bottom));
+        copy_tile_part(corner, (4, 1), (m_left, 0, 0, m_bottom));
+        
+        
+        copy_tile_part(corner, (4, 0), (m_left, 0, 0, 0));
+        copy_tile_part(corner, (4, 3), (m_left, 0, 0, 0));
+        copy_tile_part(corner, (7, 0), (0, 0, m_right, 0));
+        copy_tile_part(corner, (7, 3), (0, 0, m_right, 0));
+        
+        copy_tile_part(corner, (8, 2), (0, 0, m_right, 0));
+        copy_tile_part(corner, (9, 0), (0, 0, 0, m_bottom));
+        copy_tile_part(corner, (10, 3), (0, m_top, 0, 0));
+        copy_tile_part(corner, (11, 1), (m_left, 0, 0, 0));
+        
+        
+        copy_tile_part(corner, (9, 1), (m_left, m_top, 0, 0));
+        copy_tile_part(corner, (9, 1), (0, 0, m_right, m_bottom));
+        
+        copy_tile_part(corner, (10, 2), (m_left, 0, 0, m_bottom));
+        copy_tile_part(corner, (10, 2), (0, m_top, m_right, 0));
+    };
+    
     match mode.as_str()
     {
         "basic" =>
@@ -386,7 +441,7 @@ The tile list is optional.
             
             copy_4x4_to_12x4();
         }
-        "3x3" =>
+        "3x3" | "3x3plus" =>
         {
             let xm_left = left_edge;
             let xm_top = top_edge;
@@ -450,6 +505,11 @@ The tile list is optional.
             copy_tile_part((0, 0), (1, 3), (0, 0, 0, m_bottom));
             
             copy_4x4_to_12x4();
+            
+            if mode == "3x3plus"
+            {
+                copy_corners((3, 0));
+            }
         }
         "4x4" | "4x4plus" =>
         {
@@ -460,10 +520,12 @@ The tile list is optional.
                     out_img.borrow_mut().put_pixel(ix, iy, in_img.borrow().get_pixel(ix, iy).to_rgba());
                 }
             }
+            
             copy_4x4_to_12x4();
+            
             if mode == "4x4plus"
             {
-                
+                copy_corners((4, 0));
             }
         }
         "minitiles" =>
