@@ -26,7 +26,7 @@ while autotyler can assemble it like this, using `edges=8,12,8,4`:
 
 Also, autotyler supports more commonly-shaped input formats (3x3 and 4x4), and also a pathetically small input format (literally just two tiles).
 
-There are five other algorithms with varying levels of sophistication, as below:
+There are seven other algorithms with varying levels of sophistication, as below:
 
 ### basic_border
 
@@ -46,11 +46,27 @@ or with edges=8,6,8,10:
 
 ![out_basic](examples/3x3_output_edges_8,6,8,10.png)
 
+### 3x3plus
+
+![in_basic](examples/3x3plus.png)
+
+![out_basic](examples/3x3plus_output.png)
+
+or with edges=8,6,8,10:
+
+![out_basic](examples/3x3_output_edges_8,6,8,10.png)
+
 ### 4x4
 
 ![in_basic](examples/4x4.png)
 
 ![out_basic](examples/4x4_output.png)
+
+### 4x4plus
+
+![in_basic](examples/4x4plus.png)
+
+![out_basic](examples/4x4plus_output.png)
 
 ### minitiles
 
@@ -104,7 +120,7 @@ The output is a tilemap set up for godot 3x3 minimal autotiling with this bitmas
 
 ## Modes
 
-The five algorithms take these kinds of inputs, in terms of autotile bitmasks:
+The seven algorithms take these kinds of inputs, in terms of autotile bitmasks:
 
 ### basic
 
