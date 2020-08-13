@@ -90,7 +90,9 @@ options:
       basic: 2 tiles, see examples. (default)
       basic_border: 2 tiles, see examples.
       3x3: 9 tiles, see examples.
+      3x3plus: 10 tiles, see examples.
       4x4: 16 tiles, see examples.
+      4x4plus: 17 tiles, see examples.
       minitiles: 5 tiles, see https://github.com/lunarfyre7/GodotAutotileAssembler and examples.
   size=N
     The height and width of the tile in pixels. Currently only support square tiles.
