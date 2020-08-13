@@ -451,7 +451,7 @@ The tile list is optional.
             
             copy_4x4_to_12x4();
         }
-        "4x4" =>
+        "4x4" | "4x4plus" =>
         {
             for ix in 0..size*4
             {
@@ -461,6 +461,10 @@ The tile list is optional.
                 }
             }
             copy_4x4_to_12x4();
+            if mode == "4x4plus"
+            {
+                
+            }
         }
         "minitiles" =>
         {
