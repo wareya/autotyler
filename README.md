@@ -136,9 +136,17 @@ The seven algorithms take these kinds of inputs, in terms of autotile bitmasks:
 
 ![bitmask](readme/3x3%20bitmask.png)
 
+### 3x3plus
+
+![bitmask](readme/3x3plus%20bitmask.png)
+
 ### 4x4
 
 ![bitmask](readme/4x4%20bitmask.png)
+
+### 4x4plus
+
+![bitmask](readme/4x4plus%20bitmask.png)
 
 ### minitiles
 
