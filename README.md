@@ -54,7 +54,7 @@ or with edges=8,6,8,10:
 
 or with edges=8,6,8,10:
 
-![out_basic](examples/3x3_output_edges_8,6,8,10.png)
+![out_basic](examples/3x3plus_output_edges_8,6,8,10.png)
 
 ### 4x4
 
