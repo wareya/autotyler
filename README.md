@@ -26,7 +26,19 @@ while autotyler can assemble it like this, using `edges=8,12,8,4`:
 
 Also, autotyler supports more commonly-shaped input formats (3x3 and 4x4), and also a pathetically small input format (literally just two tiles).
 
-There are seven other algorithms with varying levels of sophistication, as below:
+There are seven algorithms with varying levels of sophistication, as below:
+
+### basic
+
+![in_basic](examples/basic.png)
+
+![out_basic](examples/basic_output.png)
+
+Or:
+
+![in_basic](examples/basicborder.png)
+
+![out_basic](examples/basic2_output.png)
 
 ### basic_border
 
