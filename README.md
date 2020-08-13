@@ -10,7 +10,7 @@ Out: ![out_basic](examples/basic_output.png)
 
 ## Why?
 
-Existing tools for this generally don't allow you to specify how much of the tile is taken up by edges. This means that they would chop off parts of edges when copying them onto other tiles. For example, [Godot Autotiles Assembler](https://github.com/lunarfyre7/GodotAutotileAssembler) assembles this input:
+Existing tools for this generally don't allow you to specify how much of the tile is taken up by edges. This means that they could chop off parts of edges when copying them onto other tiles, particularly when using platformer tilesets where having edges wider than half the tile is very common. For example, [Godot Autotiles Assembler](https://github.com/lunarfyre7/GodotAutotileAssembler) assembles this input:
 
 ![minitiles](readme/nat_minitiles.png)
 
