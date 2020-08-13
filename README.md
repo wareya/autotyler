@@ -8,7 +8,25 @@ In: ![in_basic](examples/basic.png)
 
 Out: ![out_basic](examples/basic_output.png)
 
-There are five other algorithms with varying levels of sophistication, like below:
+## Why?
+
+Existing tools for this generally don't allow you to specify how much of the tile is taken up by edges. This means that they would chop off parts of edges when copying them onto other tiles. For example, [Godot Autotiles Assembler](https://github.com/lunarfyre7/GodotAutotileAssembler) assembles this input:
+
+![minitiles](readme/nat_minitiles.png)
+
+something like this:
+
+![minitiles](readme/nat_mini_out_raw.png)
+
+while autotyler can assemble it like this, using `edges=8,12,8,4`:
+
+![minitiles](readme/nat_mini_out.png)
+
+(Example adapted from [this entry on opengameart](https://opengameart.org/content/2d-nature-platformer-tileset-16x16))
+
+Also, autotyler supports more commonly-shaped input formats (3x3 and 4x4), and also a pathetically small input format (literally just two tiles).
+
+There are five other algorithms with varying levels of sophistication, as below:
 
 ### basic_border
 
