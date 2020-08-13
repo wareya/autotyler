@@ -34,6 +34,8 @@ There are five other algorithms with varying levels of sophistication, as below:
 
 ![out_basic](examples/basicborder_output.png)
 
+(This example's inpu tiles are inspired by, but are not based on, a pair of tiles from [this entry on opengameart](https://opengameart.org/content/tiny-16-basic))
+
 ### 3x3
 
 ![in_basic](examples/3x3.png)
