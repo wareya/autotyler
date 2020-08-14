@@ -4,6 +4,8 @@ Autotyler is a program that turns small "incomplete" tilemaps into complete godo
 
 Licensed under the Apache license, version 2.0.
 
+Download here: https://github.com/wareya/autotyler/releases
+
 In: ![in_basic](examples/basic.png)
 
 Out: ![out_basic](examples/basic_output.png)
