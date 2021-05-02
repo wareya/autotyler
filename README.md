@@ -1,5 +1,7 @@
 # autotyler
 
+Deprecated. Use https://wareya.github.io/webtyler/ instead.
+
 Autotyler is a program that turns small "incomplete" tilemaps into complete godot 3x3 minimal autotile tilemaps, including support for configuring edge sizes.
 
 Licensed under the Apache license, version 2.0.
